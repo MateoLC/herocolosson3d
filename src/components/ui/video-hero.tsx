@@ -36,7 +36,7 @@ export const VideoHero = () => {
       </div>
 
       {/* Hero Content (Absolute Layer for Full Height Control) */}
-      <div className="absolute inset-0 z-20 flex flex-col items-start px-6 sm:px-10 md:pl-12 lg:pl-24 pt-24 pb-6 md:pb-12 md:justify-center">
+      <div className="absolute inset-0 z-20 flex flex-col items-start px-4 sm:px-10 md:pl-12 lg:pl-24 pt-24 pb-6 md:pb-12 md:justify-center">
         <div className="flex flex-col items-start text-left">
           <motion.h1 
             initial={{ opacity: 0, x: -30 }}
@@ -51,7 +51,7 @@ export const VideoHero = () => {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="mt-12 md:mt-6 max-w-[280px] sm:max-w-xl text-lg sm:text-xl md:text-2xl text-black font-medium text-left leading-relaxed"
+            className="mt-12 md:mt-6 max-w-[240px] sm:max-w-xl text-lg sm:text-xl md:text-2xl text-black font-medium text-justify leading-relaxed"
           >
             O aumenta tus ventas cambiando la forma en la que te presentas.
           </motion.p>
