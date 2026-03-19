@@ -14,7 +14,7 @@ export const VideoHero = () => {
           loop
           muted
           playsInline
-          className="w-full md:w-[60%] lg:w-1/2 h-full object-contain md:object-cover rounded-2xl md:rounded-3xl shadow-2xl opacity-90"
+          className="w-full md:w-[50%] lg:w-[45%] xl:w-[40%] h-full object-contain md:object-cover rounded-2xl md:rounded-3xl shadow-2xl opacity-90"
         >
           <source src="/colosson-bg.mp4" type="video/mp4" />
           Tu navegador no soporta videos HTML5.
@@ -35,7 +35,7 @@ export const VideoHero = () => {
       </div>
 
       {/* Hero Content (Left Aligned) */}
-      <div className="z-20 flex flex-col items-start text-left px-6 sm:px-10 md:ml-12 lg:ml-24 w-full max-w-3xl mt-24 md:mt-0">
+      <div className="z-20 flex flex-col items-start text-left px-6 sm:px-10 md:ml-12 lg:ml-24 w-full max-w-xl md:max-w-2xl lg:max-w-[45%] xl:max-w-[40%] mt-24 md:mt-0">
         <motion.h1 
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
