@@ -14,15 +14,15 @@ export const VideoHero = () => {
           loop
           muted
           playsInline
-          className="w-full md:w-[50%] lg:w-[45%] xl:w-[40%] h-full object-cover md:object-bottom rounded-none md:rounded-2xl shadow-none md:shadow-2xl opacity-85 md:opacity-90 transition-opacity duration-1000"
+          className="w-full md:w-[50%] lg:w-[45%] xl:w-[40%] h-full object-cover md:object-bottom rounded-2xl md:rounded-2xl shadow-none md:shadow-2xl opacity-90 transition-opacity duration-1000"
         >
           <source src="/colosson-bg.mp4" type="video/mp4" />
           Tu navegador no soporta videos HTML5.
         </video>
       </div>
 
-      {/* Dark Overlay gradient for text readability (Left side dark, Right side clear) */}
-      <div className="absolute inset-0 bg-black/10 md:bg-transparent md:bg-gradient-to-r from-black/90 via-black/70 to-transparent pointer-events-none z-10 w-full md:w-3/4 h-full"></div>
+      {/* Dark Overlay gradient for text readability (Light overlay for brightness) */}
+      <div className="absolute inset-0 bg-black/5 md:bg-transparent md:bg-gradient-to-r from-black/90 via-black/70 to-transparent pointer-events-none z-10 w-full md:w-3/4 h-full"></div>
 
       {/* Brand Logo */}
       <div className="absolute top-6 left-6 md:top-8 md:left-8 z-30">
@@ -35,9 +35,9 @@ export const VideoHero = () => {
         </a>
       </div>
 
-      {/* Hero Content (Enhanced Mobile Layout) */}
-      <div className="z-20 flex flex-col items-start text-left px-6 sm:px-10 md:ml-12 lg:ml-24 w-full h-full max-w-xl md:max-w-2xl lg:max-w-[45%] xl:max-w-[40%] pt-28 md:pt-0 md:justify-center">
-        <div className="flex flex-col items-start text-left">
+      {/* Hero Content (Absolute Layer for Full Height Control) */}
+      <div className="absolute inset-0 z-20 flex flex-col items-start px-6 sm:px-10 md:pl-12 lg:pl-24 pt-24 pb-12 md:justify-center">
+        <div className="w-full max-w-xl md:max-w-2xl lg:max-w-[45%] xl:max-w-[40%] text-left">
           <motion.h1 
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
@@ -51,18 +51,18 @@ export const VideoHero = () => {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="mt-4 md:mt-6 max-w-xl text-lg sm:text-xl md:text-2xl text-gray-200 text-left"
+            className="mt-4 md:mt-6 max-w-xl text-lg sm:text-xl md:text-2xl text-gray-200"
           >
             O aumenta tus ventas cambiando la forma en la que te presentas.
           </motion.p>
         </div>
 
-        {/* Action Buttons - Anchored to bottom on mobile */}
+        {/* Action Buttons - Pushed to the very bottom */}
         <motion.div 
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="flex flex-col sm:flex-row items-center justify-start gap-4 mt-auto md:mt-12 mb-10 md:mb-0 w-full sm:w-auto"
+          className="mt-auto flex flex-col sm:flex-row items-center justify-start gap-4 w-full sm:w-auto"
         >
           <a href="https://wa.me/573246580207" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#00a859] hover:bg-[#008f4c] text-white px-8 py-4 rounded-full font-bold shadow-lg transition-all w-full sm:w-auto text-lg hover:scale-105">
             <FaWhatsapp size={22} />
