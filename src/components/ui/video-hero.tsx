@@ -60,7 +60,7 @@ export const VideoHero = () => {
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="flex flex-col sm:flex-row items-center justify-start gap-4 mt-20 md:mt-10 w-full sm:w-auto"
+          className="flex flex-col sm:flex-row items-center justify-start gap-4 mt-32 md:mt-20 w-full sm:w-auto"
         >
           <a href="https://wa.me/573246580207" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#00a859] hover:bg-[#008f4c] text-white px-8 py-4 rounded-full font-bold shadow-lg transition-all w-full sm:w-auto text-lg hover:scale-105">
             <FaWhatsapp size={22} />
