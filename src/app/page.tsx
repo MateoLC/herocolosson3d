@@ -1,9 +1,9 @@
-import InteractiveSelector from "@/components/ui/interactive-selector";
+import VideoHero from "@/components/ui/video-hero";
 
 export default function Home() {
   return (
     <main className="w-full">
-      <InteractiveSelector />
+      <VideoHero />
     </main>
   );
 }
