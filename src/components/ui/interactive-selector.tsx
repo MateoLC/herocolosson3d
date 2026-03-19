@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';  
-import { FaLink, FaIdCard, FaTrophy, FaUserAstronaut, FaBoxOpen } from 'react-icons/fa';
+import { FaLink, FaIdCard, FaTrophy, FaUserAstronaut, FaBoxOpen, FaWhatsapp, FaCalendarAlt } from 'react-icons/fa';
 
 // Mapping the user's attached B2B portfolio images  
 
@@ -83,24 +83,35 @@ const options = [
       `}} />
 
       {/* Header Section */}  
-      <div className="w-full max-w-4xl px-4 mt-20 mb-8 text-center sm:px-6 sm:mt-12">  
+      <div className="w-full max-w-4xl px-4 mt-20 md:mt-16 text-center sm:px-6">  
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-[#0F262B] mb-4 tracking-tight animate-fadeInTop delay-300 leading-tight">  
           Mejora la imagen de tu empresa con un simple detalle  
         </h1>  
-        <p className="text-lg sm:text-xl md:text-2xl text-gray-600 font-medium max-w-2xl mx-auto animate-fadeInTop delay-600">  
+        <p className="text-lg sm:text-l md:text-2xl text-gray-600 font-medium max-w-2xl mx-auto animate-fadeInTop delay-600">  
           O aumenta tus ventas cambiando la forma en la que te presentas.  
         </p>  
+        
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8 animate-fadeInTop delay-600 pb-2">
+          <a href="https://wa.me/573246580207" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-[#00a859] hover:bg-[#008f4c] text-white px-8 py-3 rounded-full font-bold shadow-lg transition-colors w-full sm:w-auto justify-center text-base sm:text-lg">
+            <FaWhatsapp size={20} />
+            WhatsApp
+          </a>
+          <a href="https://cal.com/mateo-lopez-carvajal-pj7eoq/30min" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-white hover:bg-gray-50 text-[#0F262B] border-2 border-gray-200 px-8 py-3 rounded-full font-bold shadow-lg transition-colors w-full sm:w-auto justify-center text-base sm:text-lg">
+            <FaCalendarAlt size={20} />
+            Agendar una cita
+          </a>
+        </div>
       </div>
 
-      <div className="h-4"></div>
+      <div className="h-4 md:h-8"></div>
 
       {/* Options Container */}  
-      <div className="options flex w-[95%] max-w-[1000px] md:min-w-[700px] h-[65vh] md:h-[500px] mx-4 items-stretch overflow-hidden relative rounded-xl shadow-2xl bg-white p-2">  
+      <div className="options flex flex-col md:flex-row w-[95%] max-w-[1000px] h-[65vh] md:h-[500px] mx-4 items-stretch overflow-hidden relative rounded-xl shadow-2xl bg-white p-2 mb-8">  
         {options.map((option, index) => (  
           <div  
             key={index}  
             className={`  
-              option relative flex flex-col justify-end overflow-hidden transition-all duration-700 ease-in-out rounded-lg mx-1  
+              option relative flex flex-col justify-end overflow-hidden transition-all duration-700 ease-in-out rounded-lg my-1 md:my-0 md:mx-1 min-h-[50px] md:min-h-0 md:min-w-[60px]
               ${activeIndex === index ? 'active' : ''}  
             `}  
             style={{  
@@ -109,14 +120,12 @@ const options = [
               backgroundPosition: 'center',  
               backfaceVisibility: 'hidden',  
               opacity: animatedOptions.includes(index) ? 1 : 0,  
-              transform: animatedOptions.includes(index) ? 'translateX(0)' : 'translateX(-60px)',  
-              minWidth: '60px',  
               cursor: 'pointer',  
               backgroundColor: '#e5e5e5',  
               boxShadow: activeIndex === index   
-                ? '0 20px 60px rgba(0,0,0,0.2)'   
+                ? '0 10px 40px rgba(0,0,0,0.3)'   
                 : 'none',  
-              flex: activeIndex === index ? '7 1 0%' : '1 1 0%',  
+              flex: activeIndex === index ? '5 1 0%' : '1 1 0%',  
               zIndex: activeIndex === index ? 10 : 1,  
               display: 'flex',  
               flexDirection: 'column',  
