@@ -30,7 +30,7 @@ export const VideoHero = () => {
           <img 
             src="/colosson-logo.png" 
             alt="Colosson 3D Logo" 
-            className="w-auto h-12 md:h-16 object-contain"
+            className="w-auto h-12 md:h-16 object-contain rounded-xl"
           />
         </a>
       </div>
