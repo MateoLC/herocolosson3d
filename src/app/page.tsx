@@ -1,9 +1,9 @@
-import AnimatedHeroDemo from "@/components/demo";
+import InteractiveSelector from "@/components/ui/interactive-selector";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <AnimatedHeroDemo />
+    <main className="w-full">
+      <InteractiveSelector />
     </main>
   );
 }

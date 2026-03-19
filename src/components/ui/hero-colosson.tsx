@@ -13,7 +13,7 @@ interface AnimatedMarqueeHeroProps {
   className?: string;  
 }
 
-const ActionButton = ({ children, icon: Icon, primary, href }: { children: React.ReactNode, icon?: any, primary?: boolean, href?: string }) => {
+const ActionButton = ({ children, icon: Icon, primary, href }: { children: React.ReactNode, icon?: React.ElementType, primary?: boolean, href?: string }) => {
   const MotionTag = href ? motion.a : motion.button;
   return (
     <MotionTag
