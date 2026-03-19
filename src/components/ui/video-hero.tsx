@@ -8,13 +8,13 @@ export const VideoHero = () => {
   return (
     <section className="relative w-full min-h-[100svh] flex flex-col justify-center overflow-hidden bg-black">
       {/* Background Video */}
-      <div className="absolute inset-0 z-0 flex items-center justify-end p-4 md:p-12 pb-32 md:pb-20 lg:pb-24 mt-24 md:mt-0">
+      <div className="absolute inset-0 z-0 flex items-center justify-end p-0 md:p-12 md:pb-20 lg:pb-24">
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="w-full md:w-[50%] lg:w-[45%] xl:w-[40%] h-full object-contain md:object-cover md:object-bottom rounded-2xl shadow-2xl opacity-90"
+          className="w-full md:w-[50%] lg:w-[45%] xl:w-[40%] h-full object-cover md:object-bottom rounded-none md:rounded-2xl shadow-none md:shadow-2xl opacity-50 md:opacity-90"
         >
           <source src="/colosson-bg.mp4" type="video/mp4" />
           Tu navegador no soporta videos HTML5.
@@ -22,7 +22,7 @@ export const VideoHero = () => {
       </div>
 
       {/* Dark Overlay gradient for text readability (Left side dark, Right side clear) */}
-      <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-black/90 via-black/70 to-transparent pointer-events-none z-10 w-full md:w-3/4 h-full"></div>
+      <div className="absolute inset-0 bg-transparent md:bg-gradient-to-r from-black/90 via-black/70 to-transparent pointer-events-none z-10 w-full md:w-3/4 h-full"></div>
 
       {/* Brand Logo */}
       <div className="absolute top-6 left-6 md:top-8 md:left-8 z-30">
