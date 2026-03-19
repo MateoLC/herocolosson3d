@@ -8,13 +8,13 @@ export const VideoHero = () => {
   return (
     <section className="relative w-full min-h-[100svh] flex flex-col justify-center overflow-hidden bg-black">
       {/* Background Video */}
-      <div className="absolute inset-0 z-0 flex items-center justify-end p-4 md:p-12 pb-32 md:pb-12 mt-24 md:mt-0">
+      <div className="absolute inset-0 z-0 flex items-center justify-end p-4 md:p-12 pb-32 md:pb-20 lg:pb-24 mt-24 md:mt-0">
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="w-full md:w-[50%] lg:w-[45%] xl:w-[40%] h-full object-contain md:object-cover rounded-2xl md:rounded-3xl shadow-2xl opacity-90"
+          className="w-full md:w-[50%] lg:w-[45%] xl:w-[40%] h-full object-contain md:object-cover md:object-bottom rounded-2xl shadow-2xl opacity-90"
         >
           <source src="/colosson-bg.mp4" type="video/mp4" />
           Tu navegador no soporta videos HTML5.
