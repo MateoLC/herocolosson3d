@@ -61,7 +61,7 @@ export const AnimatedMarqueeHero: React.FC<AnimatedMarqueeHeroProps> = ({
         </a>
       </div>
 
-      <div className="z-10 flex flex-col items-center md:mt-[-10vh] md:pb-0">  
+      <div className="z-10 flex flex-col items-center pt-8 md:pt-0 md:pb-[35vh]">  
         <motion.h1  
           initial="hidden"  
           animate="show"  
@@ -99,14 +99,14 @@ export const AnimatedMarqueeHero: React.FC<AnimatedMarqueeHeroProps> = ({
         </motion.div>  
       </div>
 
-      <div className="relative mt-8 md:mt-0 md:absolute bottom-0 left-0 w-full h-[25vh] md:h-[40%] [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)] flex items-center">  
+      <div className="relative mt-8 md:mt-0 md:absolute bottom-0 left-0 w-full h-[25vh] md:h-[35vh] [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)] flex items-center pb-8 md:pb-0">  
         <motion.div  
           className="flex gap-4 sm:gap-6 items-center h-full"  
           animate={{ x: ["0%", "-50%"] }}
-          transition={{ ease: "linear", duration: 10, repeat: Infinity }}
+          transition={{ ease: "linear", duration: 25, repeat: Infinity }}
         >  
           {duplicatedImages.map((src, index) => (  
-            <div key={index} className="relative aspect-[4/3] h-32 sm:h-48 md:h-64 flex-shrink-0" style={{ rotate: `${(index % 2 === 0 ? -3 : 3)}deg` }}>  
+            <div key={index} className="relative aspect-[4/3] h-32 sm:h-48 md:h-56 flex-shrink-0" style={{ rotate: `${(index % 2 === 0 ? -3 : 3)}deg` }}>  
               <img src={src} alt={`Colosson3D B2B Showcase ${index + 1}`} className="w-full h-full object-cover rounded-2xl shadow-2xl border-4 border-white/10" />  
             </div>  
           ))}  
