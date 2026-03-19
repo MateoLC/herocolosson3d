@@ -50,9 +50,9 @@ export const AnimatedMarqueeHero: React.FC<AnimatedMarqueeHeroProps> = ({
   const duplicatedImages = [...images, ...images, ...images];
 
   return (  
-    <section className={cn("relative w-full h-screen overflow-hidden bg-black flex flex-col items-center justify-center text-center px-4", className)}>  
+    <section className={cn("relative w-full min-h-[100svh] overflow-hidden bg-black flex flex-col items-center justify-start md:justify-center text-center px-4 pt-24 md:pt-0", className)}>  
       {/* Brand Logo */}
-      <div className="absolute top-8 left-8 z-30">
+      <div className="absolute top-6 left-6 md:top-8 md:left-8 z-30">
         <a className="flex items-center gap-2" href="#">
           <div className="bg-[#00a859] text-white rounded-lg p-2 font-bold flex items-center justify-center w-10 h-10">
             <span>3D</span>
@@ -61,12 +61,12 @@ export const AnimatedMarqueeHero: React.FC<AnimatedMarqueeHeroProps> = ({
         </a>
       </div>
 
-      <div className="z-10 flex flex-col items-center mt-[-10vh]">  
+      <div className="z-10 flex flex-col items-center md:mt-[-10vh] md:pb-0">  
         <motion.h1  
           initial="hidden"  
           animate="show"  
           variants={{ hidden: {}, show: { transition: { staggerChildren: 0.1 } } }}  
-          className="text-5xl md:text-7xl font-extrabold tracking-tight text-white max-w-5xl"  
+          className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight text-white max-w-5xl leading-tight"  
         >  
           {typeof title === 'string' ? (  
             title.split(" ").map((word, i) => (  
@@ -82,7 +82,7 @@ export const AnimatedMarqueeHero: React.FC<AnimatedMarqueeHeroProps> = ({
           animate="show"  
           variants={FADE_IN_ANIMATION_VARIANTS}  
           transition={{ delay: 0.4 }}  
-          className="mt-6 max-w-3xl text-xl text-gray-300"  
+          className="mt-6 max-w-3xl text-sm md:text-xl text-gray-300 px-2 leading-relaxed"  
         >  
           {description}  
         </motion.p>
@@ -92,21 +92,21 @@ export const AnimatedMarqueeHero: React.FC<AnimatedMarqueeHeroProps> = ({
           animate="show"  
           variants={FADE_IN_ANIMATION_VARIANTS}  
           transition={{ delay: 0.6 }}  
-          className="mt-2 flex flex-col sm:flex-row gap-4 w-full sm:w-auto z-20 relative"  
+          className="mt-8 flex flex-col sm:flex-row gap-3 w-full sm:w-auto z-20 relative"  
         >  
           <ActionButton primary icon={MessageCircle} href="https://wa.me/573246580207">WhatsApp</ActionButton>  
           <ActionButton icon={Calendar} href="https://cal.com/mateo-lopez-carvajal-pj7eoq/30min">Agendar una cita</ActionButton>  
         </motion.div>  
       </div>
 
-      <div className="absolute bottom-0 left-0 w-full h-1/3 md:h-[40%] [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]">  
+      <div className="relative mt-8 md:mt-0 md:absolute bottom-0 left-0 w-full h-[25vh] md:h-[40%] [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)] flex items-center">  
         <motion.div  
-          className="flex gap-6 items-center h-full"  
+          className="flex gap-4 sm:gap-6 items-center h-full"  
           animate={{ x: ["0%", "-50%"] }}
-          transition={{ ease: "linear", duration: 35, repeat: Infinity }}
+          transition={{ ease: "linear", duration: 10, repeat: Infinity }}
         >  
           {duplicatedImages.map((src, index) => (  
-            <div key={index} className="relative aspect-[4/3] h-48 md:h-64 flex-shrink-0" style={{ rotate: `${(index % 2 === 0 ? -3 : 3)}deg` }}>  
+            <div key={index} className="relative aspect-[4/3] h-32 sm:h-48 md:h-64 flex-shrink-0" style={{ rotate: `${(index % 2 === 0 ? -3 : 3)}deg` }}>  
               <img src={src} alt={`Colosson3D B2B Showcase ${index + 1}`} className="w-full h-full object-cover rounded-2xl shadow-2xl border-4 border-white/10" />  
             </div>  
           ))}  
