@@ -42,7 +42,7 @@ export const VideoHero = () => {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-tight"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-gray-400 leading-tight text-justify max-w-[280px] sm:max-w-none"
           >
             Mejora la imagen de tu empresa con un simple detalle
           </motion.h1>
