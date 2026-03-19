@@ -14,7 +14,7 @@ export const VideoHero = () => {
           loop
           muted
           playsInline
-          className="w-full md:w-[50%] lg:w-[45%] xl:w-[40%] h-full object-cover md:object-bottom rounded-none md:rounded-2xl shadow-none md:shadow-2xl opacity-50 md:opacity-90"
+          className="w-full md:w-[50%] lg:w-[45%] xl:w-[40%] h-full object-cover md:object-bottom rounded-none md:rounded-2xl shadow-none md:shadow-2xl opacity-70 md:opacity-90 transition-opacity duration-1000"
         >
           <source src="/colosson-bg.mp4" type="video/mp4" />
           Tu navegador no soporta videos HTML5.
@@ -22,7 +22,7 @@ export const VideoHero = () => {
       </div>
 
       {/* Dark Overlay gradient for text readability (Left side dark, Right side clear) */}
-      <div className="absolute inset-0 bg-transparent md:bg-gradient-to-r from-black/90 via-black/70 to-transparent pointer-events-none z-10 w-full md:w-3/4 h-full"></div>
+      <div className="absolute inset-0 bg-black/20 md:bg-transparent md:bg-gradient-to-r from-black/90 via-black/70 to-transparent pointer-events-none z-10 w-full md:w-3/4 h-full"></div>
 
       {/* Brand Logo */}
       <div className="absolute top-6 left-6 md:top-8 md:left-8 z-30">
@@ -30,13 +30,13 @@ export const VideoHero = () => {
           <img 
             src="/colosson-logo.png" 
             alt="Colosson 3D Logo" 
-            className="w-auto h-12 md:h-16 object-contain rounded-xl"
+            className="w-auto h-12 md:h-16 object-contain rounded-xl shadow-lg"
           />
         </a>
       </div>
 
       {/* Hero Content (Left Aligned) */}
-      <div className="z-20 flex flex-col items-start text-left px-6 sm:px-10 md:ml-12 lg:ml-24 w-full max-w-xl md:max-w-2xl lg:max-w-[45%] xl:max-w-[40%] mt-24 md:mt-0">
+      <div className="z-20 flex flex-col items-start text-left px-6 sm:px-10 md:ml-12 lg:ml-24 w-full max-w-xl md:max-w-2xl lg:max-w-[45%] xl:max-w-[40%] mt-12 md:mt-0">
         <motion.h1 
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
@@ -50,7 +50,7 @@ export const VideoHero = () => {
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mt-6 max-w-xl text-lg sm:text-xl md:text-2xl text-gray-200"
+          className="mt-6 max-w-xl text-lg sm:text-xl md:text-2xl text-gray-200 text-left"
         >
           O aumenta tus ventas cambiando la forma en la que te presentas.
         </motion.p>
@@ -60,7 +60,7 @@ export const VideoHero = () => {
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="flex flex-col sm:flex-row items-center justify-start gap-4 mt-10 w-full sm:w-auto"
+          className="flex flex-col sm:flex-row items-center justify-start gap-4 mt-20 md:mt-10 w-full sm:w-auto"
         >
           <a href="https://wa.me/573246580207" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#00a859] hover:bg-[#008f4c] text-white px-8 py-4 rounded-full font-bold shadow-lg transition-all w-full sm:w-auto text-lg hover:scale-105">
             <FaWhatsapp size={22} />
