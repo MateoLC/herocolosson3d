@@ -26,10 +26,8 @@ export const VideoHero = () => {
 
       {/* Brand Logo */}
       <div className="absolute top-6 left-6 md:top-8 md:left-8 z-30">
-        <a className="flex items-center gap-2" href="#">
-          <div className="bg-[#00a859] text-white rounded-lg p-2 font-bold flex items-center justify-center w-10 h-10 md:w-12 md:h-12">
-            <span>3D</span>
-          </div>
+        <a className="flex items-center gap-3" href="/">
+          <img src="/colosson-logo.png" alt="3D Colosson Logo" className="w-10 h-10 md:w-12 md:h-12 object-contain rounded-xl" />
           <span className="font-bold text-xl text-white tracking-widest hidden sm:inline-block">Colosson</span>
         </a>
       </div>
