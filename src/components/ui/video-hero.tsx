@@ -25,12 +25,13 @@ export const VideoHero = () => {
       <div className="absolute inset-0 bg-black/5 md:bg-transparent md:bg-gradient-to-r from-black/90 via-black/70 to-transparent pointer-events-none z-10 w-full md:w-3/4 h-full"></div>
 
       {/* Brand Logo */}
-      <div className="absolute top-6 left-6 md:top-8 md:left-8 z-30">
+      <div className="absolute top-6 left-4 md:top-8 md:left-12 z-30">
         <a className="flex items-center gap-2" href="#">
           <img 
             src="/colosson-logo.png" 
             alt="Colosson 3D Logo" 
-            className="w-auto h-12 md:h-16 object-contain rounded-xl shadow-lg"
+            className="w-auto h-12 md:h-16 object-contain filter grayscale(1) contrast(200%) brightness(0)"
+            style={{ mixBlendMode: 'multiply' }}
           />
         </a>
       </div>
