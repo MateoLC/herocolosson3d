@@ -43,7 +43,7 @@ export const VideoHero = () => {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-black leading-tight text-left max-w-[280px] sm:max-w-none"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-black leading-tight text-left max-w-[200px] sm:max-w-none"
           >
             Mejora la imagen de tu empresa con un simple detalle
           </motion.h1>
@@ -52,7 +52,7 @@ export const VideoHero = () => {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="mt-4 md:mt-6 max-w-[240px] sm:max-w-xl text-lg sm:text-xl md:text-2xl text-black font-medium text-justify leading-relaxed"
+            className="mt-4 md:mt-6 max-w-[200px] sm:max-w-xl text-lg sm:text-xl md:text-2xl text-black font-medium text-justify leading-relaxed"
           >
             O aumenta tus ventas cambiando la forma en la que te presentas.
           </motion.p>
