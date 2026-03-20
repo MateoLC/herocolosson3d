@@ -30,7 +30,7 @@ export const VideoHero = () => {
           <img 
             src="/colosson-logo.png" 
             alt="Colosson 3D Logo" 
-            className="w-auto h-12 md:h-16 object-contain filter grayscale(1) contrast(200%) brightness(0)"
+            className="w-auto h-12 md:h-16 object-contain"
             style={{ mixBlendMode: 'multiply' }}
           />
         </a>
