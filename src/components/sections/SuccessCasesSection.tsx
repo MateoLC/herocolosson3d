@@ -13,7 +13,6 @@ export default function SuccessCasesSection() {
             <p className="text-sm text-on-surface-variant mb-6 italic">"Logramos un 40% más de retención en clientes clave gracias a los kits NFC de Colosson."</p>
             <div className="mt-auto pt-6 border-t border-outline-variant/15 flex justify-between items-center">
               <span className="text-xs font-bold uppercase tracking-tighter">NFC Onboarding</span>
-              <span className="material-symbols-outlined text-primary text-sm">trending_up</span>
             </div>
           </div>
         </div>
@@ -25,7 +24,6 @@ export default function SuccessCasesSection() {
             <p className="text-sm text-on-surface-variant mb-6 italic">"Las maquetas 3D paramétricas para nuestros cierres de venta son ahora un estándar de lujo."</p>
             <div className="mt-auto pt-6 border-t border-outline-variant/15 flex justify-between items-center">
               <span className="text-xs font-bold uppercase tracking-tighter">3D Modeling</span>
-              <span className="material-symbols-outlined text-primary text-sm">diamond</span>
             </div>
           </div>
         </div>
@@ -37,7 +35,6 @@ export default function SuccessCasesSection() {
             <p className="text-sm text-on-surface-variant mb-6 italic">"Redefinimos nuestra identidad visual física con piezas que parecen extraídas de una galería."</p>
             <div className="mt-auto pt-6 border-t border-outline-variant/15 flex justify-between items-center">
               <span className="text-xs font-bold uppercase tracking-tighter">Brand Sculpture</span>
-              <span className="material-symbols-outlined text-primary text-sm">token</span>
             </div>
           </div>
         </div>

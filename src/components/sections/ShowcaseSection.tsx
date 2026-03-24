@@ -28,7 +28,6 @@ export default function ShowcaseSection() {
         {/* NFC Cards */}
         <div className="md:col-span-2 h-[400px] relative group overflow-hidden rounded-md bg-surface-container-high border border-outline-variant/10">
           <div className="p-8 h-full flex flex-col">
-            <span className="material-symbols-outlined text-primary text-4xl mb-6">contactless</span>
             <h3 className="font-headline text-2xl font-bold mb-4">NFC Business Cards</h3>
             <p className="text-sm text-on-surface-variant mb-8 leading-relaxed">
               Tu contacto en el móvil de tu cliente con un solo toque. Metal, madera o polímero premium.
@@ -61,17 +60,6 @@ export default function ShowcaseSection() {
           <div className="p-8 h-full flex flex-col justify-center">
             <h3 className="font-headline text-xl font-bold text-primary mb-2">Diseño Paramétrico</h3>
             <p className="text-sm text-on-surface-variant mb-6">Creamos formas imposibles para métodos de fabricación tradicionales.</p>
-            <div className="flex gap-2">
-              <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
-                <span className="material-symbols-outlined text-xs">hub</span>
-              </div>
-              <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
-                <span className="material-symbols-outlined text-xs">architecture</span>
-              </div>
-              <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
-                <span className="material-symbols-outlined text-xs">draw</span>
-              </div>
-            </div>
           </div>
         </div>
         

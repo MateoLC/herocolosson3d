@@ -32,9 +32,9 @@ export default function HeroSection() {
       
       {/* Floating Mockup Placeholder */}
       <div className="relative mt-12 md:absolute md:top-1/2 md:right-0 md:-translate-y-1/2 w-full md:w-1/2 flex justify-center items-center">
-        <div className="relative w-72 h-48 glass-card rounded-xl border border-outline-variant/20 shadow-2xl rotate-12 flex flex-col p-6 overflow-hidden">
+        <div className="relative w-72 h-48 glass-card rounded-xl border border-outline-variant/20 shadow-2xl rotate-12 flex flex-col p-6 justify-between overflow-hidden">
           <div className="absolute top-0 right-0 w-32 h-32 bg-primary/20 blur-3xl"></div>
-          <span className="material-symbols-outlined text-primary mb-auto" data-icon="nfc">nfc</span>
+          <div></div>
           <div>
             <div className="text-xs uppercase tracking-widest text-on-surface-variant mb-1">Industrial Series</div>
             <div className="font-headline text-xl font-bold">METAL-PLATE NFC</div>
