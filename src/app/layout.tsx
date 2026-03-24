@@ -1,15 +1,20 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Space_Grotesk, Manrope } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-sans",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-headline",
+  subsets: ["latin"],
+});
+
+const manrope = Manrope({
+  variable: "--font-body",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Colosson 3D - B2B",
-  description: "Servicio de Impresión 3D Profesional en México",
+  title: "Colosson 3D | Industrial Excellence Defined",
+  description: "Transformamos la identidad corporativa en objetos físicos de alta precisión. Ingeniería industrial de lujo para marcas que no aceptan lo común.",
 };
 
 export default function RootLayout({
@@ -20,9 +25,11 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${inter.variable} h-full antialiased`}
+      className={`dark ${spaceGrotesk.variable} ${manrope.variable} h-full antialiased`}
     >
-      <body className="font-sans min-h-full flex flex-col">{children}</body>
+      <body className="bg-background text-on-background font-body min-h-full flex flex-col selection:bg-primary selection:text-on-primary">
+        {children}
+      </body>
     </html>
   );
 }

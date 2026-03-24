@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Colosson3D | Industrial Excellence Defined</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-tint": "#f6be39",
+              "on-tertiary": "#003062",
+              "outline-variant": "#4f4634",
+              "primary-fixed-dim": "#f6be39",
+              "on-error": "#690005",
+              "on-primary-fixed": "#261a00",
+              "on-secondary": "#2f312e",
+              "primary": "#f6be39",
+              "surface-container-high": "#2a2a2a",
+              "surface-dim": "#131313",
+              "on-primary": "#402d00",
+              "error": "#ffb4ab",
+              "on-surface": "#e5e2e1",
+              "primary-container": "#d4a017",
+              "on-secondary-container": "#b8b9b4",
+              "on-background": "#e5e2e1",
+              "surface-container-low": "#1c1b1b",
+              "background": "#131313",
+              "secondary": "#c6c7c2",
+              "tertiary-fixed": "#d6e3ff",
+              "on-tertiary-container": "#003d7a",
+              "surface": "#131313",
+              "inverse-on-surface": "#313030",
+              "secondary-fixed": "#e3e3de",
+              "on-surface-variant": "#d3c5ae",
+              "inverse-surface": "#e5e2e1",
+              "primary-fixed": "#ffdfa0",
+              "on-tertiary-fixed-variant": "#00468b",
+              "on-secondary-fixed": "#1a1c19",
+              "surface-variant": "#353534",
+              "on-secondary-fixed-variant": "#454744",
+              "on-primary-container": "#503a00",
+              "surface-container-lowest": "#0e0e0e",
+              "on-primary-fixed-variant": "#5c4300",
+              "secondary-container": "#484a46",
+              "on-tertiary-fixed": "#001b3d",
+              "tertiary-fixed-dim": "#a9c7ff",
+              "inverse-primary": "#795900",
+              "surface-container": "#201f1f",
+              "tertiary-container": "#72a9ff",
+              "surface-bright": "#3a3939",
+              "outline": "#9b8f7a",
+              "secondary-fixed-dim": "#c6c7c2",
+              "surface-container-highest": "#353534",
+              "error-container": "#93000a",
+              "on-error-container": "#ffdad6",
+              "tertiary": "#a9c7ff"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-card {
+        background: rgba(42, 42, 42, 0.6);
+        backdrop-filter: blur(20px);
+      }
+      .molten-gradient {
+        background: linear-gradient(135deg, #f6be39 0%, #d4a017 100%);
+      }
+      .noise-overlay {
+        position: fixed;
+        top: 0; left: 0; width: 100%; height: 100%;
+        pointer-events: none;
+        opacity: 0.03;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        z-index: 9999;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary">
+<div class="noise-overlay"></div>
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313]/60 backdrop-blur-md shadow-[0_40px_60px_-10px_rgba(245,245,240,0.06)]">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#F6BE39]" data-icon="precision_manufacturing">precision_manufacturing</span>
+<span class="text-xl font-bold tracking-tighter text-[#F5F5F0] font-headline">Colosson3D</span>
+</div>
+<button class="bg-[#F6BE39] text-[#402D00] px-4 py-2 rounded-DEFAULT text-sm font-bold tracking-tight hover:scale-95 transition-transform">
+                GET STARTED
+            </button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[795px] flex flex-col justify-center px-6 py-20 overflow-hidden">
+<div class="absolute inset-0 z-0 opacity-40">
+<div class="absolute top-1/4 -right-20 w-96 h-96 bg-primary/20 blur-[120px] rounded-full"></div>
+<div class="absolute bottom-1/4 -left-20 w-96 h-96 bg-primary-container/10 blur-[100px] rounded-full"></div>
+</div>
+<div class="relative z-10 max-w-xl mx-auto md:mx-0">
+<h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter leading-[0.9] text-primary mb-8">
+                    Tu empresa, impresa en el mundo
+                </h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-md mb-10 leading-relaxed">
+                    Transformamos la identidad corporativa en objetos físicos de alta precisión. Ingeniería industrial de lujo para marcas que no aceptan lo común.
+                </p>
+<div class="flex flex-col gap-4">
+<button class="molten-gradient text-on-primary font-bold py-5 px-8 rounded-DEFAULT text-center shadow-lg hover:brightness-110 transition-all">
+                        Solicitar Presupuesto
+                    </button>
+<div class="flex items-center gap-4 py-6 border-t border-outline-variant/15 mt-4">
+<div class="flex -space-x-3">
+<div class="w-10 h-10 rounded-full border-2 border-background bg-surface-container-high flex items-center justify-center text-[10px] font-bold">C3D</div>
+<div class="w-10 h-10 rounded-full border-2 border-background bg-primary-container flex items-center justify-center text-[10px] font-bold text-on-primary">500+</div>
+</div>
+<span class="text-sm font-medium text-on-surface-variant">Empresas atendidas con éxito industrial.</span>
+</div>
+</div>
+</div>
+<!-- Floating Mockup Placeholder -->
+<div class="relative mt-12 md:absolute md:top-1/2 md:right-0 md:-translate-y-1/2 w-full md:w-1/2 flex justify-center items-center">
+<div class="relative w-72 h-48 glass-card rounded-xl border border-outline-variant/20 shadow-2xl rotate-12 flex flex-col p-6 overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/20 blur-3xl"></div>
+<span class="material-symbols-outlined text-primary mb-auto" data-icon="nfc">nfc</span>
+<div>
+<div class="text-xs uppercase tracking-widest text-on-surface-variant mb-1">Industrial Series</div>
+<div class="font-headline text-xl font-bold">METAL-PLATE NFC</div>
+</div>
+</div>
+<div class="absolute -z-10 w-full h-full">
+<img class="w-full h-full object-contain opacity-30 mix-blend-screen" data-alt="Abstract 3D golden mesh flowing pattern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA59ZSwL-r3rI5nC3sR2LoNHOpw5SY7gJYd4s8bP-_ibdH0xathvooGDWGcW53FzGI1F0IYewqb0UFlUllkNpv1tSELTgYQN5jMAG4ctEsti6pBNmZggwoPJ7Zb8C1ze8EQDPC52fs8hLDn4vVLemXP8ZygBh_izB3S9kXivSHuj-KJodU000ipPeHAz1MAat578IaB933EfnHNX0-vMZrbe561n4qcUab7ipVjr6mMuRG6MS8DNTs9wDWsU3VWN3xALl7sQI7Sa2sq"/>
+</div>
+</div>
+</section>
+<!-- Problem Section -->
+<section class="bg-surface-container-lowest py-24 px-6">
+<div class="max-w-4xl mx-auto text-center mb-16">
+<span class="text-primary font-bold tracking-[0.2em] text-xs uppercase mb-4 block">El Status Quo</span>
+<h2 class="font-headline text-3xl md:text-5xl font-bold tracking-tight mb-6">
+                    ¿Tu empresa da el mismo lapicero de siempre?
+                </h2>
+<p class="text-on-surface-variant">El merchandising genérico termina en la basura. Colosson3D crea activos que se quedan en el escritorio de por vida.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+<div class="p-8 rounded-lg bg-surface-container-low border border-outline-variant/10">
+<div class="text-error mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="cancel">cancel</span>
+<span class="font-bold text-sm uppercase tracking-wider">Lo Genérico</span>
+</div>
+<ul class="space-y-4">
+<li class="flex items-start gap-3 text-on-surface-variant text-sm">
+<span class="material-symbols-outlined text-xs mt-1" data-icon="close">close</span>
+                            Plástico inyectado de baja calidad.
+                        </li>
+<li class="flex items-start gap-3 text-on-surface-variant text-sm">
+<span class="material-symbols-outlined text-xs mt-1" data-icon="close">close</span>
+                            Logo impreso que se borra con el uso.
+                        </li>
+<li class="flex items-start gap-3 text-on-surface-variant text-sm">
+<span class="material-symbols-outlined text-xs mt-1" data-icon="close">close</span>
+                            Cero valor percibido por el cliente.
+                        </li>
+</ul>
+</div>
+<div class="p-8 rounded-lg bg-surface-container-high border-l-4 border-primary shadow-xl">
+<div class="text-primary mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="check_circle" data-weight="fill">check_circle</span>
+<span class="font-bold text-sm uppercase tracking-wider">Colosson3D</span>
+</div>
+<ul class="space-y-4">
+<li class="flex items-start gap-3 text-on-surface text-sm">
+<span class="material-symbols-outlined text-primary text-xs mt-1" data-icon="done_all">done_all</span>
+                            Resinas industriales y filamentos metálicos.
+                        </li>
+<li class="flex items-start gap-3 text-on-surface text-sm">
+<span class="material-symbols-outlined text-primary text-xs mt-1" data-icon="done_all">done_all</span>
+                            Grabado láser e integración tecnológica NFC.
+                        </li>
+<li class="flex items-start gap-3 text-on-surface text-sm">
+<span class="material-symbols-outlined text-primary text-xs mt-1" data-icon="done_all">done_all</span>
+                            Piezas de colección que refuerzan tu marca.
+                        </li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Product Showcase (Bento Grid) -->
+<section class="py-24 px-6 max-w-7xl mx-auto">
+<h2 class="font-headline text-4xl font-bold mb-16 text-center md:text-left">Soluciones de Ingeniería Visual</h2>
+<div class="grid grid-cols-1 md:grid-cols-6 gap-6">
+<!-- Large Feature -->
+<div class="md:col-span-4 h-[400px] relative group overflow-hidden rounded-md bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60" data-alt="High precision 3D printer head creating a complex gold geometry" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAENOGOjn20shf3ctA2qxBkizx9ojHqK6Cb4H0awRKfprOe3YeeaAdF4PwOQO31kElGiDs_EjmU7GOz6MDtY7rhpArul6CLRwYlTf5Gf8gzb-z9NnZ5RauQy1Eq-aBVC6ELrAV79xkb5EJfLouZULUGzeQ1llirFjP5z08r8zqeE3XUrs5VG3PGPfOC-zR4dgN3fCICjPVFOyd5-dHI-AieeIASRkBYl70IL4ijVC72uuGYLaezCbp4QnUf11GmnmVJVFwVMIbZstBL"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute bottom-0 p-8">
+<span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-xs font-bold mb-4 inline-block">MÁXIMA PRECISIÓN</span>
+<h3 class="font-headline text-2xl font-bold mb-2">Impresión 3D de Alta Fidelidad</h3>
+<p class="text-on-surface-variant max-w-md">Prototipado y producción final con acabados industriales de lujo.</p>
+</div>
+</div>
+<!-- NFC Cards -->
+<div class="md:col-span-2 h-[400px] relative group overflow-hidden rounded-md bg-surface-container-high border border-outline-variant/10">
+<div class="p-8 h-full flex flex-col">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="contactless">contactless</span>
+<h3 class="font-headline text-2xl font-bold mb-4">NFC Business Cards</h3>
+<p class="text-sm text-on-surface-variant mb-8 leading-relaxed">Tu contacto en el móvil de tu cliente con un solo toque. Metal, madera o polímero premium.</p>
+<div class="mt-auto">
+<img class="w-full h-32 object-cover rounded shadow-inner" data-alt="Premium metallic business cards with laser etching" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdTrw-w1tM3dEL3GkvQtdYxCTnkfOBgft6-aYfbk_M-VIU74GF8cFcxA6vaZHu3iyh397ae4IqQJWusF8msMqGebXKmklRCm35HNJAbySfkaatSI8E37QPdKkCYAmoDEqvoJlKO8BPm9_A2lnJ2dRwlmva_c22arT_4_qLeQSCe4teSE1Vsids_FWoYtfhieqmC68wAmbQAorKY1lK_odCyPenYTn9bdg7qIwjBMjnyK1orEjBDBzz7QbuwBtZ7uk5qRMqi3DvmwQJ"/>
+</div>
+</div>
+</div>
+<!-- Welcome Kits -->
+<div class="md:col-span-3 h-[300px] relative group overflow-hidden rounded-md bg-surface-container-low">
+<img class="absolute inset-0 w-full h-full object-cover opacity-50 transition-opacity group-hover:opacity-70" data-alt="Elegant corporate gift box with black and gold items" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCU_seFBFQHszkgm7re6365tRDIWxee8UeFzfKPMneP8eJGg13iZ8Pxilfp3-6spxaSibN-pT6NXwRpBIinsWSZjT_rJmh2NSbU1-NeIc7-OoSblZngN0smKm08us10Yovzd2kDPrMnipk2IzjGdir_kkCFcgjZr2L-Tt1wYwu58Fq6YIbE1_c0FsemE9NHr1KM5N1sA_uA-5a85UvaUvrJC_4WJze-aEPrUb1kpChtWObAtNoRAmOqShvCM6-4j21jVubaQOIKh4hC"/>
+<div class="absolute inset-0 p-8 flex flex-col justify-end">
+<h3 class="font-headline text-xl font-bold">Welcome Kits Corporativos</h3>
+<p class="text-sm text-on-surface-variant mt-2">Experiencias de unboxing que elevan el employer branding.</p>
+</div>
+</div>
+<!-- Custom Parts -->
+<div class="md:col-span-3 h-[300px] relative group overflow-hidden rounded-md bg-surface-container-highest">
+<div class="p-8 h-full flex flex-col justify-center">
+<h3 class="font-headline text-xl font-bold text-primary mb-2">Diseño Paramétrico</h3>
+<p class="text-sm text-on-surface-variant mb-6">Creamos formas imposibles para métodos de fabricación tradicionales.</p>
+<div class="flex gap-2">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center"><span class="material-symbols-outlined text-xs" data-icon="hub">hub</span></div>
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center"><span class="material-symbols-outlined text-xs" data-icon="architecture">architecture</span></div>
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center"><span class="material-symbols-outlined text-xs" data-icon="draw">draw</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- How it Works -->
+<section class="py-24 bg-surface-container-lowest relative">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="font-headline text-4xl font-bold mb-20 text-center">Protocolo de Producción</h2>
+<div class="grid md:grid-cols-4 gap-12">
+<div class="relative group">
+<div class="text-6xl font-black text-outline-variant/20 font-headline absolute -top-8 -left-4 group-hover:text-primary/10 transition-colors">01</div>
+<div class="relative pt-4">
+<h4 class="font-bold text-primary mb-3 text-lg">Briefing</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Analizamos tu ADN de marca para definir el concepto del objeto.</p>
+</div>
+</div>
+<div class="relative group">
+<div class="text-6xl font-black text-outline-variant/20 font-headline absolute -top-8 -left-4 group-hover:text-primary/10 transition-colors">02</div>
+<div class="relative pt-4">
+<h4 class="font-bold text-primary mb-3 text-lg">Prototipo</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Modelado 3D y muestra física para validación de texturas.</p>
+</div>
+</div>
+<div class="relative group">
+<div class="text-6xl font-black text-outline-variant/20 font-headline absolute -top-8 -left-4 group-hover:text-primary/10 transition-colors">03</div>
+<div class="relative pt-4">
+<h4 class="font-bold text-primary mb-3 text-lg">Producción</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Impresión industrial con supervisión técnica CNC paso a paso.</p>
+</div>
+</div>
+<div class="relative group">
+<div class="text-6xl font-black text-outline-variant/20 font-headline absolute -top-8 -left-4 group-hover:text-primary/10 transition-colors">04</div>
+<div class="relative pt-4">
+<h4 class="font-bold text-primary mb-3 text-lg">Entrega</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Logística asegurada con empaque de lujo personalizado.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Results / Case Studies -->
+<section class="py-24 px-6 max-w-7xl mx-auto">
+<h2 class="font-headline text-3xl font-bold mb-12 text-center md:text-left">Casos de Éxito Industrial</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Case 1 -->
+<div class="bg-surface-container rounded-md p-1 group hover:bg-primary transition-colors duration-300">
+<div class="bg-background p-6 h-full flex flex-col">
+<div class="text-primary font-black mb-4 group-hover:text-primary transition-colors">TECH-CORP</div>
+<p class="text-sm text-on-surface-variant mb-6 italic">"Logramos un 40% más de retención en clientes clave gracias a los kits NFC de Colosson."</p>
+<div class="mt-auto pt-6 border-t border-outline-variant/15 flex justify-between items-center">
+<span class="text-xs font-bold uppercase tracking-tighter">NFC Onboarding</span>
+<span class="material-symbols-outlined text-primary text-sm" data-icon="trending_up">trending_up</span>
+</div>
+</div>
+</div>
+<!-- Case 2 -->
+<div class="bg-surface-container rounded-md p-1 group hover:bg-primary transition-colors duration-300">
+<div class="bg-background p-6 h-full flex flex-col">
+<div class="text-primary font-black mb-4">LUXURY REALTY</div>
+<p class="text-sm text-on-surface-variant mb-6 italic">"Las maquetas 3D paramétricas para nuestros cierres de venta son ahora un estándar de lujo."</p>
+<div class="mt-auto pt-6 border-t border-outline-variant/15 flex justify-between items-center">
+<span class="text-xs font-bold uppercase tracking-tighter">3D Modeling</span>
+<span class="material-symbols-outlined text-primary text-sm" data-icon="diamond">diamond</span>
+</div>
+</div>
+</div>
+<!-- Case 3 -->
+<div class="bg-surface-container rounded-md p-1 group hover:bg-primary transition-colors duration-300">
+<div class="bg-background p-6 h-full flex flex-col">
+<div class="text-primary font-black mb-4">GLOBAL LOGISTICS</div>
+<p class="text-sm text-on-surface-variant mb-6 italic">"Redefinimos nuestra identidad visual física con piezas que parecen extraídas de una galería."</p>
+<div class="mt-auto pt-6 border-t border-outline-variant/15 flex justify-between items-center">
+<span class="text-xs font-bold uppercase tracking-tighter">Brand Sculpture</span>
+<span class="material-symbols-outlined text-primary text-sm" data-icon="token">token</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Lead Form -->
+<section class="py-24 px-6 bg-surface-container-high border-t border-primary/20">
+<div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-headline text-4xl font-bold mb-6 text-primary">Inicia tu Transformación</h2>
+<p class="text-on-surface-variant mb-8">Déjanos tus datos y un especialista industrial se contactará para una consultoría de diseño gratuita.</p>
+<div class="flex items-center gap-4 text-sm text-on-surface/60">
+<span class="material-symbols-outlined text-primary" data-icon="verified">verified</span>
+                        Garantía de calidad industrial ISO-9001
+                    </div>
+</div>
+<form class="space-y-4">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Nombre Completo</label>
+<input class="w-full bg-surface-container-lowest border-none border-b-2 border-transparent focus:ring-0 focus:border-primary text-on-surface p-4 rounded" placeholder="Tu nombre..." type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Email Corporativo</label>
+<input class="w-full bg-surface-container-lowest border-none border-b-2 border-transparent focus:ring-0 focus:border-primary text-on-surface p-4 rounded" placeholder="correo@empresa.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Requerimiento</label>
+<select class="w-full bg-surface-container-lowest border-none border-b-2 border-transparent focus:ring-0 focus:border-primary text-on-surface p-4 rounded appearance-none">
+<option>Impresión 3D Personalizada</option>
+<option>Tarjetas NFC Corporativas</option>
+<option>Welcome Kits</option>
+<option>Otros</option>
+</select>
+</div>
+<button class="w-full molten-gradient text-on-primary font-black py-5 mt-4 rounded shadow-2xl hover:brightness-110 active:scale-[0.98] transition-all">
+                        QUIERO DESTACARME
+                    </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0E0E0E] w-full py-12 px-6 border-t border-[#4F4634]/15">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="md:col-span-1">
+<div class="text-lg font-black text-[#F5F5F0] mb-4 font-headline uppercase tracking-tighter">Colosson3D</div>
+<p class="text-sm text-[#F5F5F0]/60 leading-relaxed mb-6">Industrial Excellence Defined. Fabricación aditiva de lujo para el mercado B2B Latinoamericano.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-[#D4A017] cursor-pointer hover:scale-110 transition-transform" data-icon="language">language</span>
+<span class="material-symbols-outlined text-[#D4A017] cursor-pointer hover:scale-110 transition-transform" data-icon="mail">mail</span>
+</div>
+</div>
+<div>
+<h5 class="font-headline uppercase text-xs font-bold text-[#F5F5F0] mb-6 tracking-widest">Soluciones</h5>
+<ul class="space-y-3 text-sm">
+<li><a class="text-[#F5F5F0]/60 hover:text-[#F5F5F0] transition-colors" href="#">Technology</a></li>
+<li><a class="text-[#F5F5F0]/60 hover:text-[#F5F5F0] transition-colors" href="#">Materials</a></li>
+<li><a class="text-[#F5F5F0]/60 hover:text-[#F5F5F0] transition-colors" href="#">Industrial Spec</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-headline uppercase text-xs font-bold text-[#F5F5F0] mb-6 tracking-widest">Empresa</h5>
+<ul class="space-y-3 text-sm">
+<li><a class="text-[#F5F5F0]/60 hover:text-[#F5F5F0] transition-colors" href="#">Case Studies</a></li>
+<li><a class="text-[#F5F5F0]/60 hover:text-[#F5F5F0] transition-colors" href="#">Contact</a></li>
+<li><a class="text-[#F5F5F0]/60 hover:text-[#F5F5F0] transition-colors" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-headline uppercase text-xs font-bold text-[#F5F5F0] mb-6 tracking-widest">Newsletter</h5>
+<p class="text-xs text-[#F5F5F0]/40 mb-4">Recibe actualizaciones sobre manufactura 4.0.</p>
+<div class="flex">
+<input class="bg-surface-container-high border-none rounded-l text-xs p-2 w-full" placeholder="Tu email" type="text"/>
+<button class="bg-primary text-on-primary px-4 rounded-r"><span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-[#4F4634]/10 text-center text-xs text-[#F5F5F0]/30">
+            © 2024 Colosson3D. Industrial Excellence Defined.
+        </div>
+</footer>
+<!-- Floating WhatsApp Action -->
+<a class="fixed bottom-6 right-6 w-14 h-14 bg-green-600 text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform z-[100] border-4 border-background/50" href="#">
+<span class="material-symbols-outlined" data-icon="chat" data-weight="fill">chat</span>
+</a>
+</body></html>
