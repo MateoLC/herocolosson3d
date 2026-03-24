@@ -12,10 +12,10 @@ export default function Footer() {
             Industrial Excellence Defined. Fabricación aditiva de lujo para el mercado B2B Latinoamericano.
           </p>
           <div className="flex gap-4">
-            <span className="material-symbols-outlined text-[#D4A017] cursor-pointer hover:scale-110 transition-transform">
+            <span className="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform">
               language
             </span>
-            <span className="material-symbols-outlined text-[#D4A017] cursor-pointer hover:scale-110 transition-transform">
+            <span className="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform">
               mail
             </span>
           </div>

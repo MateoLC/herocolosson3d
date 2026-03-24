@@ -10,20 +10,20 @@
   --font-body: var(--font-body);
   --font-label: var(--font-body);
 
-  --color-surface-tint: #f6be39;
+  --color-surface-tint: #00a651;
   --color-on-tertiary: #003062;
   --color-outline-variant: #4f4634;
-  --color-primary-fixed-dim: #f6be39;
+  --color-primary-fixed-dim: #00a651;
   --color-on-error: #690005;
-  --color-on-primary-fixed: #261a00;
+  --color-on-primary-fixed: #ffffff;
   --color-on-secondary: #2f312e;
-  --color-primary: #f6be39;
+  --color-primary: #00a651;
   --color-surface-container-high: #2a2a2a;
   --color-surface-dim: #131313;
-  --color-on-primary: #402d00;
+  --color-on-primary: #ffffff;
   --color-error: #ffb4ab;
   --color-on-surface: #e5e2e1;
-  --color-primary-container: #d4a017;
+  --color-primary-container: #00803e;
   --color-on-secondary-container: #b8b9b4;
   --color-on-background: #e5e2e1;
   --color-surface-container-low: #1c1b1b;
@@ -166,7 +166,7 @@
     backdrop-filter: blur(20px);
   }
   .molten-gradient {
-    background: linear-gradient(135deg, #f6be39 0%, #d4a017 100%);
+    background: linear-gradient(135deg, #00a651 0%, #00803e 100%);
   }
   .noise-overlay {
     position: fixed;
