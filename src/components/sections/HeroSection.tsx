@@ -16,9 +16,14 @@ export default function HeroSection() {
           Transformamos la identidad corporativa en objetos físicos de alta precisión. Ingeniería industrial de lujo para marcas que no aceptan lo común.
         </p>
         <div className="flex flex-col gap-4">
-          <button className="molten-gradient text-on-primary font-bold py-5 px-8 rounded text-center shadow-lg hover:brightness-110 transition-all">
+          <a 
+            href="https://cal.com/mateo-lopez-carvajal-pj7eoq/30min" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="molten-gradient text-on-primary font-bold py-5 px-8 rounded text-center shadow-lg hover:brightness-110 transition-all inline-block w-full sm:w-fit"
+          >
             Agendar una cita
-          </button>
+          </a>
           
           <div className="flex items-center gap-4 py-6 border-t border-outline-variant/15 mt-4">
             <div className="flex -space-x-3">
