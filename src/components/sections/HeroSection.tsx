@@ -17,7 +17,7 @@ export default function HeroSection() {
         </p>
         <div className="flex flex-col gap-4">
           <button className="molten-gradient text-on-primary font-bold py-5 px-8 rounded text-center shadow-lg hover:brightness-110 transition-all">
-            Solicitar Presupuesto
+            Agendar una cita
           </button>
           
           <div className="flex items-center gap-4 py-6 border-t border-outline-variant/15 mt-4">
