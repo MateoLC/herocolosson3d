@@ -34,7 +34,7 @@ export default function ShowcaseSection() {
             </p>
             <div className="mt-auto">
               <img 
-                className="w-full h-32 object-cover rounded shadow-inner" 
+                className="w-full h-[220px] object-cover object-center rounded shadow-inner" 
                 alt="Premium metallic business cards with laser etching" 
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdTrw-w1tM3dEL3GkvQtdYxCTnkfOBgft6-aYfbk_M-VIU74GF8cFcxA6vaZHu3iyh397ae4IqQJWusF8msMqGebXKmklRCm35HNJAbySfkaatSI8E37QPdKkCYAmoDEqvoJlKO8BPm9_A2lnJ2dRwlmva_c22arT_4_qLeQSCe4teSE1Vsids_FWoYtfhieqmC68wAmbQAorKY1lK_odCyPenYTn9bdg7qIwjBMjnyK1orEjBDBzz7QbuwBtZ7uk5qRMqi3DvmwQJ"
               />
